@@ -5,15 +5,17 @@ import FlexCenter from '../Common/FlexCenter';
 import EtherumIcon from '../../icon/EtherumIcon';
 import HeartIcon from '../../icon/HeartIcon';
 import { INFData } from '../../types/interface';
-
 import { themeColor } from '../assets/tag-data';
 import joinclass from 'joinclass';
+import { useSearchContext } from '../../context/search/index';
 
 interface INFTItemProps {
   item: INFData;
 }
 
 const NFTItem: React.FC<INFTItemProps> = ({ item }) => {
+  const { searchData, updateSearch } = useSearchContext();
+
   return (
     <div
       key={item.id}
@@ -26,13 +28,20 @@ const NFTItem: React.FC<INFTItemProps> = ({ item }) => {
         )}
       >
         <div className="flex justify-between items-center px-3 py-2">
-          <FlexCenter className="cart-tag px-3 py-1 rounded capitalize">
+          <FlexCenter
+            className="cursor-pointer hover:scale-110 cart-tag px-3 py-1 rounded capitalize"
+            onClick={() => {
+              updateSearch({ ...searchData, type: item.type });
+            }}
+          >
             {item.type}
           </FlexCenter>
           <HeartIcon />
         </div>
         <div className="flex justify-center w-full h-full">
-          <Image alt={item.name} src={item.icon} />
+          <span className="opacity-100 hover:opacity-80">
+            <Image alt={item.name} src={item.icon} />
+          </span>
         </div>
       </div>
       <div className="flex flex-col justify-center w-full items-start gap-4">

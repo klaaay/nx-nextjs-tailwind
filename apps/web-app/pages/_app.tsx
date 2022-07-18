@@ -17,7 +17,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to web-app!</title>
+        <title>Go-SQuid</title>
       </Head>
       <main className="app">
         <TopFeatureContext>

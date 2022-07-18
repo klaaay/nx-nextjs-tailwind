@@ -4,6 +4,7 @@ import SearchBox from './SearchBox';
 import SearchDropdown from './SearchDropdown';
 import ResetIcon from '../../icon/ResetIcon';
 import { useSearchContext } from '../../context/search';
+import EventBus from 'event-bus-e2z';
 
 const { createSliderWithTooltip } = Slider;
 const Range = createSliderWithTooltip(Slider.Range);
@@ -75,6 +76,7 @@ const SearchBar = () => {
           className="flex flex-row gap-2 cursor-pointer select-none"
           onClick={() => {
             clearSearch();
+            EventBus.$emit('scrollTopNft');
           }}
         >
           <div>

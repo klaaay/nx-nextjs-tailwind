@@ -1,3 +1,5 @@
+@import './header.responsive.scss';
+
 .input-box {
   border: 1px solid #89888b;
   border-radius: 4px;
@@ -16,35 +18,35 @@
 .navigation-menu {
   height: 84px;
   background: rgba(23, 22, 26, 0.7);
+}
 
-  .navigation-item {
-    &.navigation-selected {
-      pointer-events: none;
-      background: $primary-background;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-
-      .navigation-border {
-        background: $primary-background;
-      }
-    }
+.navigation-item {
+  &.navigation-selected {
+    pointer-events: none;
+    background: $primary-background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
     .navigation-border {
-      width: 16px;
-      height: 2px;
-      background: transparent;
-    }
-
-    &:hover {
-      pointer-events: none;
       background: $primary-background;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      .navigation-border {
-        background: $primary-background;
-      }
+    }
+  }
+
+  .navigation-border {
+    width: 16px;
+    height: 2px;
+    background: transparent;
+  }
+
+  &:hover {
+    pointer-events: none;
+    background: $primary-background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    .navigation-border {
+      background: $primary-background;
     }
   }
 }
@@ -58,8 +60,6 @@
     height: calc(100% - 84px);
 
     .header-logo {
-      margin-left: 160px;
-      margin-top: 48px;
 
       .header-banner-new {
         background: url(../icon/_png/banner-new.svg) no-repeat;

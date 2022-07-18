@@ -17,6 +17,7 @@
     "react-dropdown-z": "1.3.0",
     "react-pagination-z": "^1.0.0",
     "react-perfect-scrollbar-z": ">=1.2.3",
+    "react-icons": "^3.7.0",
     "rc-slider": "8.6.1",
     "react-test-renderer": "18.2.0",
     "regenerator-runtime": "0.13.7",
@@ -25,6 +26,7 @@
     "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
+    "@delpi/common": "0.1.0",
     "@nrwl/cli": "14.4.2",
     "@nrwl/cypress": "14.4.2",
     "@nrwl/eslint-plugin-nx": "14.4.2",

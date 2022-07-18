@@ -1,0 +1,49 @@
+// responsive header
+@media only screen and (max-width: 1068px) {
+  .page-header {
+    .header-logo {
+      flex-direction: column;
+
+      .header-banner-new {
+        width: 320px !important;
+        height: 170px !important;
+      }
+
+      .header-banner-arrival1 {
+        width: 320px !important;
+      }
+
+      .header-banner-arrival2 {
+        width: 320px !important;
+      }
+
+      .header-top-rate {
+        height: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .page-header {
+    height: 816px !important;
+
+    .header-logo {
+      flex-direction: row;
+    }
+
+    .header-top-rate {
+      height: auto !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-header {
+    height: 1454px !important;
+
+    .header-top-rate {
+      height: auto !important;
+    }
+  }
+}

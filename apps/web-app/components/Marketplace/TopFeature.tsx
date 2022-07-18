@@ -10,7 +10,7 @@ interface ITopFeatureItemProps {
 }
 export const TopFeatureItem: React.FC<ITopFeatureItemProps> = ({ topItem }) => {
   return (
-    <div className="flex flex-col justify-end py-6 gap-6">
+    <div className="flex flex-col items-center justify-end py-6 gap-6">
       <div className="top-bg-item relative">
         <div className="absolute bottom-0">
           {topItem?.icon && (
@@ -31,7 +31,7 @@ export const TopHighItem: React.FC<ITopFeatureItemProps> = ({ topItem }) => {
           <Image alt="" src={topItem?.icon} width="470px" height="655px" />
         )}
       </div>
-      <div className="bg-top-name absolute flex items-center font-bold text-7xl bottom-6 right-4">
+      <div className="bg-top-name absolute flex items-center justify-center font-bold text-7xl bottom-6 right-4">
         <span className="m-12">{topItem?.name}</span>
       </div>
     </div>
@@ -44,7 +44,7 @@ const TopFeature = () => {
   const top4 = (topData || []).slice(1);
   return (
     <>
-      <div className="relative ml-32 flex h-full gap-10 uppercase font-bold">
+      <div className="relative grid grid-cols-1 gap-4 xl:ml-32 lg:gap-8 md:grid-cols-2 md:w-7/12 xl:grid-cols-4 h-full  uppercase font-bold">
         {top4.map((item, index) => {
           return <TopFeatureItem key={index} topItem={item} />;
         })}
