@@ -1,2 +1,21 @@
-# nx-nextjs-tailwind-starter
-Nextjs with tailwind. (apply some lib)
+# nx-nextjs-tailwind
+
+### Description
++ Nextjs/Typescript
++ Tailwind
++ Scss
++ Responsive (checking...)
+
+### Install
+
+```js
+yarn install
+
+yarn start
+```
+
+This project was generated using [Nx](https://nx.dev).
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+
+🔎 **Smart, Fast and Extensible Build System**

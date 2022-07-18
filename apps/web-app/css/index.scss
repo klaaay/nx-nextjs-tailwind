@@ -1,0 +1,105 @@
+@import './common.scss';
+@import './header.scss';
+@import './search-box.scss';
+@import './market-cart.scss';
+
+body {
+  background-color: #3a3841;
+  color: #ffffff;
+}
+
+.page-container {
+  background-image: url(../icon/_png/bg-content.png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+
+  height: 100%;
+
+  .page-container-footer {
+    background-image: url(../icon/_png/bg-content-frame.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+
+    height: 418px;
+  }
+}
+
+.page-footer {
+  min-height: 550px;
+  background: #17161a;
+}
+
+.go-quizd-pager {
+  button {
+    background-color: transparent !important;
+    border-radius: 4px !important;
+    color: #ffffff !important;
+  }
+  .paging-hide {
+    opacity: 0 !important;
+  }
+
+  .paging-numbered {
+    border: 1px solid #89888b !important;
+
+    &.paging-active {
+      border: 1px solid #fbc625 !important;
+    }
+  }
+  .paging-first-last {
+    color: #fbc625 !important;
+    border: 1px solid #ffffff !important;
+  }
+}
+
+.go-slider {
+  .rc-slider-handle {
+    border-color: radial-gradient(
+      50% 50% at 50% 50%,
+      #ffffff 0%,
+      rgba(255, 84, 238, 0) 100%
+    ) !important;
+
+    background: $primary-background !important;
+    box-shadow: 0px 0px 10px 1px #ffffff;
+    border: solid 2px #ffffff;
+  }
+
+  .rc-slider-dot {
+    opacity: 0 !important;
+  }
+  .rc-slider-rail {
+    background-color: #3a3841 !important;
+  }
+  .rc-slider-track {
+    background: $primary-background !important;
+  }
+
+  .rc-slider-mark {
+    display: flex;
+    justify-content: space-between;
+
+    .rc-slider-mark-text {
+      position: relative;
+      width: auto !important;
+      margin: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+}
+
+.rc-slider-tooltip {
+  .rc-slider-tooltip-arrow {
+    border-color: $primary-background !important;
+  }
+  .rc-slider-tooltip-inner {
+    background: $primary-background !important;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}

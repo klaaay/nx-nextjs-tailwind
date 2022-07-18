@@ -1,0 +1,158 @@
+.input-box {
+  border: 1px solid #89888b;
+  border-radius: 4px;
+}
+
+.bg-main {
+  background: $primary-background;
+  color: #ffffff;
+  box-shadow: 0px 0px 50px rgba(187, 75, 255, 0.32);
+
+  &.second {
+    background: $secondary-background;
+  }
+}
+
+.navigation-menu {
+  height: 84px;
+  background: rgba(23, 22, 26, 0.7);
+
+  .navigation-item {
+    &.navigation-selected {
+      pointer-events: none;
+      background: $primary-background;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      .navigation-border {
+        background: $primary-background;
+      }
+    }
+
+    .navigation-border {
+      width: 16px;
+      height: 2px;
+      background: transparent;
+    }
+
+    &:hover {
+      pointer-events: none;
+      background: $primary-background;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      .navigation-border {
+        background: $primary-background;
+      }
+    }
+  }
+}
+
+.page-header {
+  background-image: url(../icon/_png/banner-background.svg);
+  background-size: cover;
+  height: 844px;
+
+  .page-header-banner {
+    height: calc(100% - 84px);
+
+    .header-logo {
+      margin-left: 160px;
+      margin-top: 48px;
+
+      .header-banner-new {
+        background: url(../icon/_png/banner-new.svg) no-repeat;
+        background-size: contain;
+        width: 412px;
+        height: 230px;
+      }
+
+      .header-banner-shop-now {
+        background: url(../icon/_png/banner-shop-now.svg) no-repeat;
+        background-size: contain;
+        width: 132px;
+        height: 54px;
+        margin-top: -40px;
+        margin-right: 40px;
+      }
+
+      .header-banner-arrival1 {
+        background: url(../icon/_png/banner-arr1.svg) no-repeat;
+        background-size: contain;
+        width: 640px;
+        height: 270px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .header-banner-arrival2 {
+        background: url(../icon/_png/banner-arr2.svg) no-repeat;
+        background-size: contain;
+        position: absolute;
+        opacity: 0.8;
+        top: -16px;
+        left: 16px;
+        width: 640px;
+        height: 270px;
+      }
+    }
+  }
+
+  .header-top-rate {
+    background: url(../icon/_png/banner-top-rate.svg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+
+    .top-bg-item {
+      width: 200px;
+      height: 120px;
+
+      background: url(../icon/_png/bg-top.png);
+      border: 1px solid #fbc625;
+      filter: drop-shadow(-12px 12px 0px #101010);
+    }
+  }
+
+  .bg-top {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .bg-top-name {
+    background: url(../icon/_png/bg-top-name.png);
+    width: 420px;
+    height: 150px;
+    z-index: 1;
+    line-height: 88px;
+  }
+}
+
+// responsive header
+// @media only screen and (max-width: 768px) {
+//   .page-header {
+//     .header-logo {
+//       flex-direction: column;
+//       margin: 16px !important;
+
+//       .header-banner-new {
+//         width: 320px !important;
+//       }
+
+//       .banner-arrival {
+//         margin: 0;
+
+//         .header-banner-arrival1 {
+//           width: 320px;
+//         }
+
+//         .header-banner-arrival2 {
+//           width: 320px;
+//         }
+//       }
+//     }
+//   }
+// }
